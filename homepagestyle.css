@@ -1,0 +1,46 @@
+#main-layout-table {
+    background-color: #414141;
+    color: white;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-style: Impact, fantasy, serif;
+}
+
+.total-numbers {
+    color: #dea152;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 20px;
+    font-style: Copperplate, Fantasy, san-serif;
+}
+
+.total-text {
+
+}
+
+#menu-list {
+    list-style-type: none;
+}
+
+.menu-item {
+
+}
+
+.crossed-area {
+    background: repeating-linear-gradient(
+        -45deg,
+        #414141,
+        #515151 3px,
+        #414141 3px,
+        #414141 6px
+    );
+}
+
+.footer-note {
+
+}
+
+.small-note {
+
+}
