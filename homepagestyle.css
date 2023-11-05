@@ -1,3 +1,4 @@
+/* TABLE STYLE */
 #main-layout-table {
     background-color: #414141;
     color: white;
@@ -8,6 +9,30 @@
     font-weight: 90;
 }
 
+.crossed-area {
+    background: repeating-linear-gradient(
+        -45deg,
+        #414141,
+        #515151 3px,
+        #414141 3px,
+        #414141 6px
+    );
+    vertical-align: center;
+}
+
+/* TITLES */
+#header-title {
+    font-family: math;
+    font-size: 20px;
+    display: flex;
+}
+
+#main-title {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+/* TOTALS AREA */
 .total-numbers {
     color: #dea152;
     font-weight: 100;
@@ -25,29 +50,35 @@
     margin-top: 8px;
 }
 
+.flex-row {
+    display: flex;
+    margin-left: 10px;
+}
+
+/* MENU IN HEADER */
 #menu-list {
-    list-style-type: none;
-    margin-left: -10px;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#menu-title {
+    font-size: 15px;
+    margin-left: 15px;
+    font-family: math;
+    font-weight: 900;
 }
 
 .menu-item {
-
+    font-weight: 50;
 }
 
-.crossed-area {
-    background: repeating-linear-gradient(
-        -45deg,
-        #414141,
-        #515151 3px,
-        #414141 3px,
-        #414141 6px
-    );
-    vertical-align: center;
-}
-
+/* SMALL NOTES */
 .footer-note {
     font-size: 25px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .small-note {
@@ -55,20 +86,7 @@
     border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 10px;
-    width: 38%;
-    margin-left: 40px;
+    width: 40%;
+    margin-left: 50px;
 }
 
-#header-title {
-    font-family: math;
-}
-
-#main-title {
-    font-size: 50px;
-    margin-left: 40px;
-}
-
-.flex-row {
-    display: flex;
-    margin-left: 10px;
-}
