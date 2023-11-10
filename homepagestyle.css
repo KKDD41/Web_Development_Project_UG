@@ -25,6 +25,14 @@
     font-family: math;
     font-size: 20px;
     display: flex;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#header-text {
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 #main-title {
@@ -89,4 +97,3 @@
     width: 40%;
     margin-left: 50px;
 }
-
