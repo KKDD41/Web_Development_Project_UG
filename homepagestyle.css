@@ -28,7 +28,7 @@ article {
     text-align: left;
     font-family: Fantasy;
     font-weight: 90;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -41,6 +41,9 @@ article {
         #414141 6px
     );
     vertical-align: center;
+    display: flex;
+    height: 15%;
+    padding-top: 20px;
 }
 
 /* TITLES */
@@ -60,6 +63,7 @@ article {
 #main-title {
     font-size: 50px;
     margin-left: 50px;
+    margin-top: 20px;
 }
 
 /* TOTALS AREA */
@@ -83,6 +87,8 @@ article {
 .flex-row {
     display: flex;
     margin-left: 10px;
+    vertical-align: center;
+    width: 33%;
 }
 
 /* MENU IN HEADER */
@@ -113,6 +119,8 @@ article {
 .footer-note {
     font-size: 25px;
     margin-left: 50px;
+    display: block;
+    height: 15%;
 }
 
 .small-note {
@@ -120,8 +128,10 @@ article {
     border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 10px;
-    width: 42%;
+    width: 41%;
     margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 /* GALLERY */
@@ -133,6 +143,7 @@ article {
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 15px;
 }
 
 .slides-gallery {
@@ -140,7 +151,7 @@ article {
 }
 
 .gallery-picture {
-
+    height: 42%;
 }
 
 /* Next & previous buttons */
