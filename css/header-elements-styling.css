@@ -1,0 +1,44 @@
+.heading-layout {
+    align: left;
+    float: left;
+    padding: 20px;
+    padding-right: 30px;
+    height: 100%;
+    border-right: 1px solid #818181;
+}
+
+#header-title {
+    font-family: math;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+}
+
+#header-text {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#menu {
+    margin-top: 70px;
+}
+
+#menu-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+#menu-title {
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: math;
+    font-weight: 900;
+}
+
+.menu-item {
+    font-weight: 50;
+}

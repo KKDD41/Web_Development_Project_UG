@@ -1,0 +1,66 @@
+body {
+    background-color: #414141;
+    color: white;
+    text-align: left;
+    font-family: Fantasy;
+    font-weight: 90;
+}
+
+article {
+    float: right;
+    height: 100%;
+    width: 87%;
+}
+
+#main-title {
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.small-note {
+    font-family: math;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 41%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.crossed-area {
+    background: repeating-linear-gradient(
+        -45deg,
+        #414141,
+        #515151 3px,
+        #414141 3px,
+        #414141 6px
+    );
+    vertical-align: center;
+    display: flex;
+    height: 15%;
+    padding-top: 20px;
+}
+
+.flex-row {
+    display: flex;
+    margin-left: 10px;
+    vertical-align: center;
+    width: 33%;
+}
+
+.footer-note {
+    font-size: 25px;
+    margin-left: 50px;
+    display: block;
+    height: 15%;
+}

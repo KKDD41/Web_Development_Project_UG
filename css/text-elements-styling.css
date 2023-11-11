@@ -1,0 +1,16 @@
+.total-numbers {
+    color: #dea152;
+    font-weight: 100;
+    font-size: 60px;
+    margin-left: 40px;
+    font-family: Fantasy;
+}
+
+.total-text {
+    font-family: Fantasy;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: left;
+    line-height: 28px;
+    margin-top: 8px;
+}
