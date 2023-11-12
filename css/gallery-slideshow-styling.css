@@ -2,10 +2,12 @@
 /* Slideshow container */
 
 .MySlides {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.slides-gallery {
-    text-align: center;
+.slideshow-inner-layout {
+    text-align: left;
 }
 
 .gallery-picture {

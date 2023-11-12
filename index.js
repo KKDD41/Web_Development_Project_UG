@@ -23,6 +23,13 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "inline-block";
+  console.log(" -> " + slideIndex.toString())
+  if (slideIndex < 6) {
+    slides[slideIndex-1].style.display = "inline-block";
+    slides[slideIndex].style.display = "inline-block";
+  } else {
+    slides[0].style.display = "inline-block";
+    slides[1].style.display = "inline-block";
+  }
   dots[slideIndex-1].className += " active";
 }
