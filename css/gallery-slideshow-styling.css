@@ -1,9 +1,14 @@
 
 /* Slideshow container */
 
-.MySlides {
+.mySlides {
     display: inline-block;
     margin-right: 20px;
+}
+
+.myPartialSlides {
+    display: inline-block;
+    width: 50px;
 }
 
 .slideshow-inner-layout {
@@ -12,6 +17,14 @@
 
 .gallery-picture {
     height: 42%;
+    border-radius: 3%;
+    box-shadow: 0px 0px 7px #000000;
+}
+
+.partial-gallery-picture {
+    height: 42%;
+    border-radius: 3%;
+    box-shadow: 0px 0px 7px #000000;
 }
 
 /* Next & previous buttons */
@@ -65,6 +78,6 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .6}
   to {opacity: 1}
 }
