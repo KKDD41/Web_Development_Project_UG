@@ -56,6 +56,7 @@
 .menu-option {
     height: 30px;
     padding: 2px;
+    border-radius: 2px;
 }
 
 .menu-option:hover {
@@ -64,3 +65,35 @@
     padding-right: 1px;
     box-shadow: inset -18px 0 20px -18px #ffffff;
 }
+
+#contacts-section {
+    padding-top: 120px;
+    position: relative;
+    padding-right: 20px;
+    line-height: 25px;
+}
+
+#contact-list {
+    list-style: square;
+    padding-right: 0px;
+    margin-block-start: 20px;
+    list-style-position: inside;
+    padding-inline-start: 0px;
+}
+
+.contact-type {
+    font-size: 15px;
+    font-family: math;
+    font-weight: 900;
+}
+
+.contact-name {
+    margin-left: 20px;
+    color: #dea152;
+    text-shadow: 0px 0px 15px #343434;
+}
+/*
+::marker {
+    padding-left: 20px !important;
+}
+*/
