@@ -51,7 +51,3 @@
 .note-link:hover {
     color: #f8b45d;
 }
-
-.note-link::after {
-    color: #f8b45d;
-}
