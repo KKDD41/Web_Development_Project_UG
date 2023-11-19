@@ -42,3 +42,11 @@ function showSlides(n) {
   }
   dots[slideIndex-1].className += " active";
 }
+
+function showContacts() {
+    if (document.getElementById("contacts-section").style.display == "none") {
+        document.getElementById("contacts-section").style.display = "block";
+    } else {
+        document.getElementById("contacts-section").style.display = "none";
+    }
+}

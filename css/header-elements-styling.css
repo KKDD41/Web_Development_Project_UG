@@ -2,7 +2,6 @@
     align: left;
     float: left;
     padding: 20px;
-    padding-right: 30px;
     height: 100%;
     border-right: 1px solid #818181;
 }
@@ -67,9 +66,9 @@
 }
 
 #contacts-section {
+    display: none;
     padding-top: 120px;
     position: relative;
-    padding-right: 20px;
     line-height: 25px;
 }
 
@@ -92,8 +91,3 @@
     color: #dea152;
     text-shadow: 0px 0px 15px #343434;
 }
-/*
-::marker {
-    padding-left: 20px !important;
-}
-*/
