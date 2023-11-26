@@ -24,16 +24,16 @@
             <span id="menu-title">MENU:</span>
             <ul id="menu-list">
                 <li>
-                    <div class="menu-option"><span class="menu-link">Home</span></div>
+                    <div class="menu-option" onclick="showHome()"><span class="menu-link">Home</span></div>
                 </li>
                 <li>
-                    <div class="menu-option"><span class="menu-link">The Studio</span></div>
+                    <div class="menu-option" onclick="showHome()"><span class="menu-link">The Studio</span></div>
                 </li>
                 <li>
-                    <div class="menu-option"><span class="menu-link">Our Services</span></div>
+                    <div class="menu-option" onclick="showServices()"><span class="menu-link">Our Services</span></div>
                 </li>
                 <li>
-                    <div class="menu-option"><span class="menu-link">Projects</span></div>
+                    <div class="menu-option" onclick="showHome()"><span class="menu-link">Projects</span></div>
                 </li>
                 <li>
                     <div class="menu-option" onclick="showContacts()"><span class="menu-link">Contacts</span></div>
@@ -54,8 +54,8 @@
             </ul>
         </div>
     </header>
-    <article>
-        <div id="main-title">OUR <span class="orange-span">PROJECTS:</span></div>
+    <article id="our-projects">
+        <div class="main-title">OUR <span class="orange-span">PROJECTS:</span></div>
         <div>
             <div class="slideshow-container">
                 <div class="slideshow-inner-layout">
@@ -158,7 +158,7 @@
             Have a project in mind? You are welcome to send a
             <a class="note-link"
                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=WASolutions@gmail.com">message</a>
-             or <a class="note-link" href="skype:live:WASolutionsSkype?call">give us a call</a>.
+            or <a class="note-link" href="skype:live:WASolutionsSkype?call">give us a call</a>.
         </div>
         <div class="crossed-area">
             <div class="flex-row">
@@ -178,6 +178,50 @@
             <div class="footer-note">
                 Since the 1980s, as the complexity of buildings began to increase, the field of <br>
                 architecture became multidisciplinary <span class="orange-span">with specializations.</span>
+            </div>
+        </div>
+    </article>
+    <article id="our-services">
+        <div class="main-title">OUR <span class="orange-span">SERVICES:</span></div>
+        <div>
+            <div class="vertical-panel">
+                <div class="services-container">
+                    <ul>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                        <li>
+                            <div class="service-option">Option X</div>
+                            <div class="service-description">Description X</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vertical-panel">
+                <div class="services-pictures-container">
+                    <div>Proto for services gallery</div>
+                </div>
             </div>
         </div>
     </article>

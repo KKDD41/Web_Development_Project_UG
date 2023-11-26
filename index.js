@@ -50,3 +50,13 @@ function showContacts() {
         document.getElementById("contacts-section").style.display = "none";
     }
 }
+
+function showHome() {
+    document.getElementById("our-services").style.display = "none"
+    document.getElementById("our-projects").style.display = "block"
+}
+
+function showServices() {
+    document.getElementById("our-projects").style.display = "none"
+    document.getElementById("our-services").style.display = "block"
+}
