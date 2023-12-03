@@ -28,9 +28,6 @@ function showSlides(n) {
   for (i = 0; i < partialSlides.length; i++) {
     partialSlides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   if (slideIndex < 6) {
     slides[slideIndex-1].style.display = "inline-block";
     slides[slideIndex].style.display = "inline-block";
@@ -40,7 +37,6 @@ function showSlides(n) {
     slides[1].style.display = "inline-block";
     partialSlides[1].style.display = "inline-block";
   }
-  dots[slideIndex-1].className += " active";
 }
 
 function showContacts() {
@@ -59,4 +55,21 @@ function showHome() {
 function showServices() {
     document.getElementById("our-projects").style.display = "none"
     document.getElementById("our-services").style.display = "block"
+}
+
+var acc = document.getElementsByClassName("service-option");
+console.log(acc.length)
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    console.log(panel.innerHTML)
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
