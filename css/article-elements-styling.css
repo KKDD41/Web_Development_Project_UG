@@ -13,6 +13,10 @@ article {
     width: 87%;
 }
 
+#our-services {
+    display: none;
+}
+
 .main-title {
     font-size: 50px;
     margin-left: 50px;
