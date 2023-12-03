@@ -1,0 +1,43 @@
+.services-pictures-container {
+
+}
+
+.services-inner-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "pic-1 pic-1 pic-2"
+      "pic-3 pic-4 pic-5"
+      "pic-6 pic-7 pic-7";
+}
+
+.services-slide {
+}
+
+.services-picture {
+    height: 180px;
+}
+
+#spic-1 {
+    grid-area: pic-1;
+}
+#spic-2 {
+    grid-area: pic-2;
+}
+#spic-3 {
+    grid-area: pic-3;
+}
+#spic-4 {
+    grid-area: pic-4;
+}
+#spic-5 {
+    grid-area: pic-5;
+}
+#spic-6 {
+    grid-area: pic-6;
+}
+#spic-7 {
+    grid-area: pic-7;
+}
