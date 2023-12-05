@@ -15,11 +15,20 @@
 .services-slide {
     text-align: center;
     display: flex;
-    padding: 5px;
+    padding: 2px;
 }
 
 .services-picture {
     height: 180px;
+    transition: border 0.2s ease-out;
+    border: 4px inset #000000;
+    filter: blur(0.5px) brightness(0.6);
+    box-shadow: 0px 0px 15px #343434;
+}
+
+.services-picture:hover {
+    filter: blur(0px) brightness(1);
+    border: 4px outset #000000;
 }
 
 #spic-1 {
