@@ -1,5 +1,4 @@
 .services-pictures-container {
-
 }
 
 .services-inner-layout {
@@ -14,6 +13,9 @@
 }
 
 .services-slide {
+    text-align: center;
+    display: flex;
+    padding: 5px;
 }
 
 .services-picture {

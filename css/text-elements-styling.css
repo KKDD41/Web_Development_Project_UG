@@ -97,3 +97,7 @@
     transition: max-height 0.2s ease-out;
 }
 
+.service-text {
+    height: 180px;
+    width: 200px;
+}

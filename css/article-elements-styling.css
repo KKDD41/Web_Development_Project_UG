@@ -83,6 +83,6 @@ article {
 
 .services-list {
     list-style-type: none;
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
 }
