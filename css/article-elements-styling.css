@@ -6,11 +6,12 @@ body {
     font-weight: 90;
     overflow-x: hidden;
 }
+main {
+    display: flex;
+}
 
 article {
-    float: right;
-    height: auto;
-    width: 87%;
+    display: inline-block;
 }
 
 #our-services {
@@ -25,7 +26,7 @@ article {
 }
 
 .slideshow-container {
-  max-width: 20000px;
+  max-height: 330px;
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
@@ -54,16 +55,14 @@ article {
     );
     vertical-align: center;
     display: flex;
-    height: 13%;
-    width: auto;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .flex-row {
     display: flex;
     margin-left: 10px;
     vertical-align: center;
-    width: 33%;
 }
 
 .footer-note {

@@ -1,8 +1,7 @@
+
 .heading-layout {
-    align: left;
-    float: left;
+    display: inline-block;
     padding: 20px;
-    height: 100%;
     border-right: 1px solid #818181;
 }
 
