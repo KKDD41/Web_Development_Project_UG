@@ -28,13 +28,20 @@ function showSlides(n) {
     partialSlides[i].style.display = "none";
   }
   if (window.matchMedia("only screen and (max-width: 600px)").matches) {
-      if (slideIndex < 5) {
-        slides[slideIndex-1].style.display = "block";
-        slides[slideIndex].style.display = "none";
-        partialSlides[slideIndex].style.display = "none";
+      shiftedIndex = slideIndex - 1;
+      if (shiftedIndex > slides.length - 1) {
+        shiftedIndex = 1
+      }
+      if (shiftedIndex < 1) {
+        shiftedIndex = slides.length - 1
+      }
+      if (slideIndex < 6) {
+        slides[shiftedIndex-1].style.display = "none";
+        slides[shiftedIndex].style.display = "block";
+        partialSlides[shiftedIndex].style.display = "none";
       } else {
-        slides[0].style.display = "block";
-        slides[1].style.display = "none";
+        slides[0].style.display = "none";
+        slides[1].style.display = "block";
         partialSlides[1].style.display = "none";
       }
   } else {
