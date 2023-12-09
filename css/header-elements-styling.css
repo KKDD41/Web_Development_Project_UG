@@ -1,8 +1,11 @@
-
 .heading-layout {
     display: inline-block;
     padding: 20px;
     border-right: 1px solid #818181;
+}
+
+header {
+    display: inline-block;
 }
 
 #header-title {
