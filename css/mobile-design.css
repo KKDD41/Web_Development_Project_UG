@@ -12,11 +12,34 @@
     .heading-layout {
         display: block;
         padding: 20px;
-        border-right: 1px solid #818181;
+        border-bottom: 1px solid #818181;
     }
 
     article {
         display: block;
         width: auto;
+    }
+
+    #menu-list li {
+        display: inline;
+    }
+    #contact-list li {
+        display: inline;
+    }
+
+    .menu-option {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .contact-option {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .contact-name {
+        margin-left: 0px;
+    }
+    #contacts-section {
+        padding-top: 10px;
+        margin-top: 0px;
     }
 }

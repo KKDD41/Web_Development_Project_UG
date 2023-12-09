@@ -89,8 +89,11 @@ header {
 }
 
 .contact-name {
-    margin-left: 20px;
     cursor: pointer;
     color: #dea152;
     text-shadow: 0px 0px 15px #343434;
+}
+
+.contact-option {
+    display: inline-block;
 }
