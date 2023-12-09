@@ -15,7 +15,6 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let partialSlides = document.getElementsByClassName("myPartialSlides");
-  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -28,14 +27,26 @@ function showSlides(n) {
   for (i = 0; i < partialSlides.length; i++) {
     partialSlides[i].style.display = "none";
   }
-  if (slideIndex < 6) {
-    slides[slideIndex-1].style.display = "inline-block";
-    slides[slideIndex].style.display = "inline-block";
-    partialSlides[slideIndex].style.display = "inline-block";
+  if (window.matchMedia("only screen and (max-width: 600px)").matches) {
+      if (slideIndex < 5) {
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex].style.display = "none";
+        partialSlides[slideIndex].style.display = "none";
+      } else {
+        slides[0].style.display = "block";
+        slides[1].style.display = "none";
+        partialSlides[1].style.display = "none";
+      }
   } else {
-    slides[0].style.display = "inline-block";
-    slides[1].style.display = "inline-block";
-    partialSlides[1].style.display = "inline-block";
+      if (slideIndex < 6) {
+        slides[slideIndex-1].style.display = "inline-block";
+        slides[slideIndex].style.display = "inline-block";
+        partialSlides[slideIndex].style.display = "inline-block";
+      } else {
+        slides[0].style.display = "inline-block";
+        slides[1].style.display = "inline-block";
+        partialSlides[1].style.display = "inline-block";
+      }
   }
 }
 
