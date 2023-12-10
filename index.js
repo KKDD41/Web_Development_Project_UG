@@ -1,6 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+var mq = window.matchMedia("only screen and (max-width: 600px)")
+mq.addEventListener("change", function () {
+        showSlides(slideIndex);
+    }
+)
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
