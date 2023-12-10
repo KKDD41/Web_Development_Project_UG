@@ -175,4 +175,62 @@
         margin-top: 0px;
         line-height: 10px;
     }
+
+    .vertical-panel {
+        display: block;
+        width: 95%;
+        margin-left: 10px;
+        margin-top: 5px;
+        vertical-align: top;
+    }
+
+    .services-list {
+        list-style-type: none;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .service-option {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .service-description {
+        padding: 0 5px;
+        font-size: 9px;
+    }
+
+    .service-text {
+        display: none;
+    }
+
+    .services-inner-layout {
+        display: block;
+    }
+
+    .service-picture {
+        width: 100%;
+        height: auto;
+    }
+
+    #spic-1 {
+        display: none;
+    }
+    #spic-2 {
+        display: none;
+    }
+    #spic-3 {
+        display: none;
+    }
+    #spic-4 {
+        display: none;
+    }
+    #spic-5 {
+        display: none;
+    }
+    #spic-6 {
+        display: none;
+    }
+    #spic-7 {
+        display: none;
+    }
 }
