@@ -28,22 +28,13 @@ function showSlides(n) {
     partialSlides[i].style.display = "none";
   }
   if (window.matchMedia("only screen and (max-width: 600px)").matches) {
-      shiftedIndex = slideIndex - 1;
-      if (shiftedIndex > slides.length - 1) {
-        shiftedIndex = 1
+      console.log("Index: ->" + slideIndex.toString() + " length: -> " + slides.length)
+      if (slideIndex == 6 && n > 1) {
+        slideIndex = 1
+      } else if (slideIndex == 6 && n < 1) {
+        slideIndex = 5
       }
-      if (shiftedIndex < 1) {
-        shiftedIndex = slides.length - 1
-      }
-      if (slideIndex < 6) {
-        slides[shiftedIndex-1].style.display = "none";
-        slides[shiftedIndex].style.display = "block";
-        partialSlides[shiftedIndex].style.display = "none";
-      } else {
-        slides[0].style.display = "none";
-        slides[1].style.display = "block";
-        partialSlides[1].style.display = "none";
-      }
+      slides[slideIndex - 1].style.display = "block"
   } else {
       if (slideIndex < 6) {
         slides[slideIndex-1].style.display = "inline-block";
