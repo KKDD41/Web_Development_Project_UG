@@ -1,17 +1,9 @@
-body {
+.container-fluid {
     background-color: #414141;
     color: white;
     text-align: left;
     font-family: Fantasy;
     font-weight: 90;
-    overflow-x: hidden;
-}
-main {
-    display: flex;
-}
-
-article {
-    display: inline-block;
 }
 
 #our-services {
@@ -38,7 +30,6 @@ article {
     border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 10px;
-    width: 42%;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 15px;

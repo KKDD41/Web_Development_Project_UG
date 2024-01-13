@@ -4,295 +4,364 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ekaterina Dul (2102930)</title>
+
+    <!-- CSS Styling -->
     <link href="./css/header-elements-styling.css" rel="stylesheet" type="text/css"/>
     <link href="./css/article-elements-styling.css" rel="stylesheet" type="text/css"/>
     <link href="./css/text-elements-styling.css" rel="stylesheet" type="text/css"/>
     <link href="./css/gallery-slideshow-styling.css" rel="stylesheet" type="text/css"/>
     <link href="./css/pictures-animation-styling.css" rel="stylesheet" type="text/css"/>
-    <link href="./css/mobile-design.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/boostrap-settings.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Bootstrap Lib-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body>
-<main>
-    <header class="heading-layout">
-        <div id="header-title">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <header class="heading-layout">
+                <div id="header-title">
             <span id="header-logo">
                 <img src="architect-logo.png" style="height: 50px; width: 50px;"/>
             </span>
-            <span id="header-text">
+                    <span id="header-text">
                 W.A. &mdash; <br> Architect
             </span>
-        </div>
-        <div id="menu">
-            <span id="menu-title">MENU:</span>
-            <ul id="menu-list">
-                <li>
-                    <div class="menu-option" onclick="showHome()"><span class="menu-link">Home</span></div>
-                </li>
-                <li>
-                    <div class="menu-option" onclick="showHome()"><span class="menu-link">The Studio</span></div>
-                </li>
-                <li>
-                    <div class="menu-option" onclick="showServices()"><span class="menu-link">Our Services</span></div>
-                </li>
-                <li>
-                    <div class="menu-option" onclick="showContacts()"><span class="menu-link">Contacts</span></div>
-                </li>
-            </ul>
-        </div>
-        <div id="contacts-section" class="fade">
-            <ul id="contact-list">
-                <li>
-                    <div class="contact-option">
-                        <span class="contact-type">Telegram:</span>
-                        <div class="contact-name">@WASolutins</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="contact-option">
-                        <span class="contact-type">Phone:</span>
-                        <div class="contact-name">599 50 89 31</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="contact-option">
-                        <span class="contact-type">E-mail:</span>
-                        <div class="contact-name">WA@gmailcom</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <article id="our-projects">
-        <div class="main-title">OUR <span class="orange-span">PROJECTS:</span></div>
-        <div>
-            <div class="slideshow-container">
-                <div class="slideshow-inner-layout">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="images/pic-1.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #1">
-                        <div class="text">&mdash; Urban City Life</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="images/pic-2.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #3">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="images/pic-2.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #2">
-                        <div class="text">&mdash; Case Study</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="images/pic-3.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #3">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="images/pic-3.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #3">
-                        <div class="text">&mdash; Architect Solutions</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="images/pic-4.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #3">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="images/pic-4.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #4">
-                        <div class="text">&mdash; Building a Dream</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="images/pic-5.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #5">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="images/pic-5.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #5">
-                        <div class="text">&mdash; Pure Satisfaction</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="images/pic-1.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #1">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="images/pic-1.jpg" class="gallery-picture"
-                             alt="Failed to load a picture #1">
-                        <div class="text">&mdash; Urban City Life</div>
-                    </div>
-
-                    <div class="myPartialSlides fade">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="images/pic-2.jpg" class="partial-gallery-picture"
-                             alt="Failed to load a picture #2">
-                    </div>
                 </div>
-
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-        </div>
-        <div class="small-note">
-            Have a project in mind? You are welcome to send a
-            <a class="note-link"
-               href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=WASolutions@gmail.com">message</a>
-            or <a class="note-link" href="skype:live:WASolutionsSkype?call">give us a call</a>.
-        </div>
-        <div class="crossed-area">
-            <div class="flex-row">
-                <span class="total-numbers">1320</span>
-                <span class="total-text">clients around <br> the world</span>
-            </div>
-            <div class="flex-row">
-                <span class="total-numbers">239K</span>
-                <span class="total-text">square <br> foot</span>
-            </div>
-            <div class="flex-row">
-                <span class="total-numbers">198M</span>
-                <span class="total-text">floor <br> completed</span>
-            </div>
-        </div>
-        <div class="crossed-area">
-            <div class="footer-note">
-                Since the 1980s, as the complexity of buildings began to increase, the field of <br>
-                architecture became multidisciplinary <span class="orange-span">with specializations.</span>
-            </div>
-        </div>
-    </article>
-    <article id="our-services">
-        <div class="main-title">OUR <span class="orange-span">SERVICES:</span></div>
-        <div>
-            <div class="vertical-panel">
-                <div class="services-container">
-                    <ul class="services-list">
+                <div id="menu">
+                    <span id="menu-title">MENU:</span>
+                    <ul id="menu-list">
                         <li>
-                            <button class="service-option">Architectural Design</button>
-                            <div class="service-description">Architectural firms offer design services for various
-                                projects, encompassing residential, commercial, or institutional buildings. This
-                                includes creating conceptual designs, drafting blueprints, and developing plans that
-                                align with client needs while considering aesthetics, functionality, and structural
-                                integrity.
+                            <div class="menu-option" onclick="showHome()"><span class="menu-link">Home</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-option" onclick="showHome()"><span class="menu-link">The Studio</span>
                             </div>
                         </li>
                         <li>
-                            <button class="service-option">Interior Design and Space Planning</button>
-                            <div class="service-description">In addition to the exterior design, architects often
-                                specialize in interior design, optimizing spatial layouts and functionality within
-                                buildings. They focus on creating cohesive, visually appealing interiors that suit the
-                                client's preferences, incorporating elements like lighting, furniture, and material
-                                selection.
+                            <div class="menu-option" onclick="showServices()"><span
+                                    class="menu-link">Our Services</span>
                             </div>
                         </li>
                         <li>
-                            <button class="service-option">Project Management</button>
-                            <div class="service-description">Architectural firms often provide project management
-                                services, overseeing the entire construction process from planning to completion. This
-                                involves coordinating with contractors, managing timelines, budgets, and ensuring that
-                                the project adheres to local building codes and regulations.
-                            </div>
-                        </li>
-                        <li>
-                            <button class="service-option">Sustainable Design and Green Building Practices</button>
-                            <div class="service-description">Many architectural firms prioritize sustainability,
-                                offering expertise in green building practices. They integrate eco-friendly materials,
-                                energy-efficient systems, and environmentally conscious designs to minimize the
-                                ecological footprint of structures.
-                            </div>
-                        </li>
-                        <li>
-                            <button class="service-option">Feasibility Studies and Site Analysis</button>
-                            <div class="service-description">Before initiating a project, architects conduct feasibility
-                                studies and site analyses. They assess the viability of the project, considering factors
-                                such as land use, environmental impact, zoning regulations, and potential constraints,
-                                providing clients with valuable insights before moving forward.
-                            </div>
-                        </li>
-                        <li>
-                            <button class="service-option">Renovation and Restoration Services</button>
-                            <div class="service-description">Architectural firms also specialize in renovation and
-                                restoration projects. They assess existing structures, propose design improvements, and
-                                manage the renovation process while preserving the historical or architectural integrity
-                                of the building.
-                            </div>
-                        </li>
-                        <li>
-                            <button class="service-option">3D Modeling and Visualization</button>
-                            <div class="service-description">Using advanced technology, architects offer 3D modeling and
-                                visualization services to help clients visualize the proposed designs. These detailed
-                                models and renderings provide a realistic preview of the finished project, aiding in
-                                decision-making and communication between stakeholders.
+                            <div class="menu-option" onclick="showContacts()"><span class="menu-link">Contacts</span>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="vertical-panel">
-                <div class="services-pictures-container">
-                    <div class="services-inner-layout">
-                        <div class="services-slide" id="spic-1">
-                            <img src="images/service-pic-1.jpg" class="services-picture" alt="service-picture-1"/>
-                            <div class="service-text left">Architecture is the silent storyteller of civilizations,
-                                narrating tales of
-                                craftsmanship and technological advancements through structures that
-                                stand the test of time.
+                <div id="contacts-section" class="fade">
+                    <ul id="contact-list">
+                        <li>
+                            <div class="contact-option">
+                                <span class="contact-type">Telegram:</span>
+                                <div class="contact-name">@WASolutins</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-option">
+                                <span class="contact-type">Phone:</span>
+                                <div class="contact-name">599 50 89 31</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-option">
+                                <span class="contact-type">E-mail:</span>
+                                <div class="contact-name">WA@gmailcom</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="col-lg-10">
+            <div id="our-projects">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="main-title">OUR <span class="orange-span">PROJECTS:</span></div>
+                        <div>
+                            <div class="slideshow-container">
+                                <div class="slideshow-inner-layout">
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">1 / 5</div>
+                                        <img src="images/pic-1.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #1">
+                                        <div class="text">&mdash; Urban City Life</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">2 / 5</div>
+                                        <img src="images/pic-2.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #3">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">2 / 5</div>
+                                        <img src="images/pic-2.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #2">
+                                        <div class="text">&mdash; Case Study</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">3 / 5</div>
+                                        <img src="images/pic-3.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #3">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">3 / 5</div>
+                                        <img src="images/pic-3.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #3">
+                                        <div class="text">&mdash; Architect Solutions</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">4 / 5</div>
+                                        <img src="images/pic-4.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #3">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">4 / 5</div>
+                                        <img src="images/pic-4.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #4">
+                                        <div class="text">&mdash; Building a Dream</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">5 / 5</div>
+                                        <img src="images/pic-5.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #5">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">5 / 5</div>
+                                        <img src="images/pic-5.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #5">
+                                        <div class="text">&mdash; Pure Satisfaction</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">1 / 5</div>
+                                        <img src="images/pic-1.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #1">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">1 / 5</div>
+                                        <img src="images/pic-1.jpg" class="gallery-picture"
+                                             alt="Failed to load a picture #1">
+                                        <div class="text">&mdash; Urban City Life</div>
+                                    </div>
+
+                                    <div class="myPartialSlides fade">
+                                        <div class="numbertext">2 / 5</div>
+                                        <img src="images/pic-2.jpg" class="partial-gallery-picture"
+                                             alt="Failed to load a picture #2">
+                                    </div>
+                                </div>
+
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="small-note">
+                            Have a project in mind? You are welcome to send a
+                            <a class="note-link"
+                               href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=WASolutions@gmail.com">message</a>
+                            or <a class="note-link" href="skype:live:WASolutionsSkype?call">give us a call</a>.
+                        </div>
+                        <div class="crossed-area">
+                            <div class="flex-row">
+                                <span class="total-numbers">1320</span>
+                                <span class="total-text">clients around <br> the world</span>
+                            </div>
+                            <div class="flex-row">
+                                <span class="total-numbers">239K</span>
+                                <span class="total-text">square <br> foot</span>
+                            </div>
+                            <div class="flex-row">
+                                <span class="total-numbers">198M</span>
+                                <span class="total-text">floor <br> completed</span>
                             </div>
                         </div>
-
-                        <div class="services-slide" id="spic-2">
-                            <img src="images/service-pic-2.jpg" class="services-picture" alt="service-picture-1"/>
-                        </div>
-
-                        <div class="services-slide" id="spic-3">
-                            <img src="images/service-pic-3.jpg" class="services-picture" alt="service-picture-1"/>
-                        </div>
-
-                        <div class="services-slide" id="spic-4">
-                            <img src="images/service-pic-4.jpg" class="services-picture" alt="service-picture-1"/>
-                        </div>
-
-                        <div class="services-slide" id="spic-5">
-                            <img src="images/service-pic-5.jpg" class="services-picture" alt="service-picture-1"/>
-                        </div>
-
-                        <div class="services-slide" id="spic-6">
-                            <img src="images/service-pic-6.jpg" class="services-picture" alt="service-picture-1"/>
-                        </div>
-
-                        <div class="services-slide" id="spic-7">
-                            <div class="service-text right">It, as both art and science, shapes our world. It's the
-                                embodiment of culture, innovation, and functionality, weaving together history and
-                                modernity in physical form.
+                        <div class="crossed-area">
+                            <div class="footer-note">
+                                Since the 1980s, as the complexity of buildings began to increase, the field of <br>
+                                architecture became multidisciplinary <span
+                                    class="orange-span">with specializations.</span>
                             </div>
-                            <img src="images/service-pic-7.jpg" class="services-picture" alt="service-picture-1"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </article>
-</main>
-<script src="index.js"></script>
-</body>
+        <div class="col-lg-10">
+            <div class="row">
+                <div id="our-services">
+                    <div class="main-title">OUR <span class="orange-span">SERVICES:</span></div>
+                    <div>
+                        <div class="vertical-panel">
+                            <div class="services-container">
+                                <ul class="services-list">
+                                    <li>
+                                        <button class="service-option">Architectural Design</button>
+                                        <div class="service-description">Architectural firms offer design services for
+                                            various
+                                            projects, encompassing residential, commercial, or institutional buildings.
+                                            This
+                                            includes creating conceptual designs, drafting blueprints, and developing
+                                            plans that
+                                            align with client needs while considering aesthetics, functionality, and
+                                            structural
+                                            integrity.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">Interior Design and Space Planning</button>
+                                        <div class="service-description">In addition to the exterior design, architects
+                                            often
+                                            specialize in interior design, optimizing spatial layouts and functionality
+                                            within
+                                            buildings. They focus on creating cohesive, visually appealing interiors
+                                            that suit
+                                            the
+                                            client's preferences, incorporating elements like lighting, furniture, and
+                                            material
+                                            selection.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">Project Management</button>
+                                        <div class="service-description">Architectural firms often provide project
+                                            management
+                                            services, overseeing the entire construction process from planning to
+                                            completion.
+                                            This
+                                            involves coordinating with contractors, managing timelines, budgets, and
+                                            ensuring
+                                            that
+                                            the project adheres to local building codes and regulations.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">Sustainable Design and Green Building Practices
+                                        </button>
+                                        <div class="service-description">Many architectural firms prioritize
+                                            sustainability,
+                                            offering expertise in green building practices. They integrate eco-friendly
+                                            materials,
+                                            energy-efficient systems, and environmentally conscious designs to minimize
+                                            the
+                                            ecological footprint of structures.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">Feasibility Studies and Site Analysis</button>
+                                        <div class="service-description">Before initiating a project, architects conduct
+                                            feasibility
+                                            studies and site analyses. They assess the viability of the project,
+                                            considering
+                                            factors
+                                            such as land use, environmental impact, zoning regulations, and potential
+                                            constraints,
+                                            providing clients with valuable insights before moving forward.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">Renovation and Restoration Services</button>
+                                        <div class="service-description">Architectural firms also specialize in
+                                            renovation and
+                                            restoration projects. They assess existing structures, propose design
+                                            improvements,
+                                            and
+                                            manage the renovation process while preserving the historical or
+                                            architectural
+                                            integrity
+                                            of the building.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="service-option">3D Modeling and Visualization</button>
+                                        <div class="service-description">Using advanced technology, architects offer 3D
+                                            modeling
+                                            and
+                                            visualization services to help clients visualize the proposed designs. These
+                                            detailed
+                                            models and renderings provide a realistic preview of the finished project,
+                                            aiding in
+                                            decision-making and communication between stakeholders.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vertical-panel">
+                            <div class="services-pictures-container">
+                                <div class="services-inner-layout">
+                                    <div class="services-slide" id="spic-1">
+                                        <img src="images/service-pic-1.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                        <div class="service-text left">Architecture is the silent storyteller of
+                                            civilizations,
+                                            narrating tales of
+                                            craftsmanship and technological advancements through structures that
+                                            stand the test of time.
+                                        </div>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-2">
+                                        <img src="images/service-pic-2.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-3">
+                                        <img src="images/service-pic-3.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-4">
+                                        <img src="images/service-pic-4.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-5">
+                                        <img src="images/service-pic-5.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-6">
+                                        <img src="images/service-pic-6.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+
+                                    <div class="services-slide" id="spic-7">
+                                        <div class="service-text right">It, as both art and science, shapes our world.
+                                            It's the
+                                            embodiment of culture, innovation, and functionality, weaving together
+                                            history and
+                                            modernity in physical form.
+                                        </div>
+                                        <img src="images/service-pic-7.jpg" class="services-picture"
+                                             alt="service-picture-1"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</div>
 </html>
