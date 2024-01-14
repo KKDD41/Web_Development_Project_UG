@@ -64,14 +64,11 @@
 
 .vertical-panel {
     display: inline-block;
-    width: 30%;
-    margin-top: 20px;
     border: 0px solid #ffffff;
     vertical-align: top;
 }
 
 .services-list {
     list-style-type: none;
-    margin-top: 25px;
     padding: 0;
 }

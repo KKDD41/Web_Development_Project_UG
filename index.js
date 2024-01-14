@@ -28,10 +28,10 @@ function showSlides(n) {
     slideIndex = slides.length
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "inline-block";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < partialSlides.length; i++) {
-    partialSlides[i].style.display = "inline-block";
+    partialSlides[i].style.display = "none";
   }
   if (window.matchMedia("only screen and (max-width: 600px)").matches) {
       console.log("Index: ->" + slideIndex.toString() + " length: -> " + slides.length)

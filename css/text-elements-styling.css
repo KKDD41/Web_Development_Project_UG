@@ -100,17 +100,17 @@
 
 .service-text {
     height: 180px;
-    width: 200px;
+    width: 160px;
     font-family: math;
     margin: 0px 5px;
 }
 
 .left {
     text-align: left;
-    padding-left: 6px;
+    padding-left: 10px;
 }
 
 .right {
     text-align: right;
-    padding-right: 6px;
+    padding-right: 10px;
 }
