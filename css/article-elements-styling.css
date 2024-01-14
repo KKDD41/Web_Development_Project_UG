@@ -1,3 +1,11 @@
+.container-fluid {
+    background-color: #414141;
+    color: white;
+    text-align: left;
+    font-family: Fantasy;
+    font-weight: 90;
+    overflow: hidden;
+}
 
 #our-services {
     display: none;
@@ -9,6 +17,13 @@
     text-shadow: 0px 0px 15px #343434;
 }
 
+.slideshow-container {
+  max-height: 330px;
+  position: relative;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
 .small-note {
     font-family: math;
     border: 1px solid #ffffff;
@@ -17,6 +32,8 @@
     margin-top: 10px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 15px #343434;
+    width: 43%;
+    text-align: center;
 }
 
 .crossed-area {
@@ -41,6 +58,7 @@
 
 .footer-note {
     font-size: 25px;
+    padding-left: 50px;
     text-shadow: 0px 0px 15px #343434;
 }
 
