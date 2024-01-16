@@ -1,25 +1,34 @@
 
 @media only screen and (max-width: 600px) {
+    .heading-layout {
+        display: flex;
+        padding-bottom: 0px;
+    }
     header {
         display: block;
         width: 100% !important;
+        padding-top: 10px;
+        padding-bottom: 0px;
     }
     #header-title {
         font-family: math;
         font-size: 12px;
-        display: flex;
+        display: inline-block;
         text-align: center;
         vertical-align: center;
     }
 
     #header-text {
-        margin-top: 5px;
-        margin-left: 10px;
-        font-size: 12px;
+        display: none;
     }
 
     #menu {
-        margin-top: 10px;
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+    #menu-title {
+        display: none;
     }
 
     main {
@@ -27,8 +36,9 @@
     }
 
     .heading-layout {
-        display: block;
+        display: flex;
         padding: 20px;
+        padding-top: 0px;
         border-bottom: 1px solid #818181;
     }
 
@@ -47,16 +57,19 @@
     .menu-option {
         display: inline-block;
         margin-right: 15px;
-        font-size: 15px;
+        font-size: 12px;
     }
     .contact-option {
         display: inline-block;
         margin-right: 20px;
         font-size: 10px;
     }
+    .contact-type {
+        font-size: 10px;
+    }
     .contact-name {
         margin-left: 0px;
-        font-size: 12px;
+        font-size: 10px;
     }
     #contacts-section {
         padding-top: 0px;
@@ -64,22 +77,24 @@
     }
 
     .main-title {
-        font-size: 40px;
-        margin-left: 20px;
+        font-size: 30px;
+        margin-left: 10px;
         margin-top: 10px;
+        text-align: center;
     }
 
     .slideshow-container {
       max-height: 230px;
       margin-left: 10px;
-      margin-right: 10px;
+      margin-right: 0px;
       margin-top: 5px;
       overflow-x: hidden;
       padding: 10px;
     }
 
     .gallery-picture {
-        height: 22%;
+        width: 100%;
+        height: auto;
     }
     .myPartialSlides .partial-gallery-picture {
         display: none;
@@ -93,7 +108,7 @@
 
     .mySlides {
         display: block;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 10px;
     }
 
@@ -139,43 +154,53 @@
     }
 
     .footer-note {
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 20px;
-        width: auto;
+        margin-right: 20px;
     }
 
     .small-note {
         padding: 5px;
-        font-size: 10px;
+        font-size: 9px;
         border-radius: 5px;
         width: auto;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     .crossed-area {
         padding-top: 10px;
         padding-bottom: 10px;
+        display: block;
     }
 
     .total-numbers {
         color: #dea152;
         font-weight: 100;
-        font-size: 18px;
+        font-size: 15px;
         margin-left: 10px;
+        margin-top: 0px;
     }
 
     .total-text {
         margin-left: 5px;
-        margin-right: 15px;
-        font-size: 9px;
+        margin-right: 5px;
+        font-size: 7px;
         text-align: left;
+        line-height: 8px;
+        width: auto;
         margin-top: 0px;
-        line-height: 10px;
     }
-
+    .crossed-wrapper {
+        display: flex;
+    }
+    .flex-row {
+        padding-bottom: 10px;
+        width: auto;
+    }
     .vertical-panel {
         display: block;
         width: 95%;
