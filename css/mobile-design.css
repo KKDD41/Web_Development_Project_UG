@@ -129,20 +129,22 @@
       text-shadow: 0px 0px 15px #000000;
     }
     .text {
+      display: none;
       color: #f2f2f2;
       font-size: 14px;
-      padding: 20px 137%;
       position: absolute;
-      bottom: 8px;
-      writing-mode: tb-rl;
-      transform: rotate(-180deg);
+      padding: 0px;
+      margin-left: 50px;
+      bottom: 0px;
+      writing-mode: none;
+      transform: rotate(270deg);
       text-shadow: 0px 0px 15px #000000;
     }
 
     .prev, .next {
       cursor: pointer;
       position: absolute;
-      top: 70%;
+      top: 50%;
       width: auto;
       margin-top: -22px;
       margin-left: 10px;
@@ -158,7 +160,7 @@
 
     /* Position the "next button" to the right */
     .next {
-      left: 50px;
+      left: 80%;
     }
 
     .footer-note {
